@@ -298,6 +298,16 @@ const questions = [
             question: "Do you experience hypersensitivity to textures, sounds, or physical sensations that affects your daily life?",
             explanation: "Sensory hypersensitivity is a common characteristic of ADHD. The ADHD brain may process sensory information more intensely, making certain textures, sounds, or physical sensations particularly overwhelming or uncomfortable. This increased sensitivity can influence daily choices, from clothing worn to environments frequented."
         }
+    },
+    {
+        fr: {
+            question: "Vos émotions sont-elles ressenties de manière particulièrement intense, avec des réactions émotionnelles qui semblent disproportionnées pour les autres ?",
+            explanation: "La dysrégulation émotionnelle et l'hypersensibilité affective sont des composantes centrales du TDAH. Les personnes TDAH peuvent ressentir les émotions avec une intensité démultipliée et avoir plus de difficultés à les réguler. Cette sensibilité accrue peut se manifester par des réactions émotionnelles plus vives, une difficulté à 'redescendre' après une émotion forte, et un impact plus profond des expériences émotionnelles sur le quotidien."
+        },
+        en: {
+            question: "Do you experience emotions particularly intensely, with emotional reactions that might seem disproportionate to others?",
+            explanation: "Emotional dysregulation and affective hypersensitivity are core components of ADHD. People with ADHD may experience emotions with multiplied intensity and have more difficulty regulating them. This increased sensitivity can manifest as more vivid emotional reactions, difficulty 'coming down' after strong emotions, and a deeper impact of emotional experiences on daily life."
+        }
     }
 ];
 
