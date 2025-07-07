@@ -148,6 +148,146 @@ const questions = [
             question: "Do you notice that your creativity expresses itself differently depending on your stress level?",
             explanation: "Stress can have a paradoxical effect on ADHD creativity, sometimes stimulating it exceptionally, sometimes blocking it completely. This non-linear relationship with stress is characteristic of neurodivergent functioning."
         }
+    },
+    {
+        fr: {
+            question: "Avez-vous tendance à accumuler plusieurs projets inachevés qui vous passionnent tous autant ?",
+            explanation: "Le cerveau TDAH est souvent attiré par le potentiel et les débuts de projets. Cette multiplicité d'intérêts simultanés reflète une curiosité naturelle et une capacité à voir les possibilités, même si cela peut mener à une accumulation de projets en cours."
+        },
+        en: {
+            question: "Do you tend to accumulate several unfinished projects that all passion you equally?",
+            explanation: "The ADHD brain is often attracted to potential and project beginnings. This multiplicity of simultaneous interests reflects a natural curiosity and ability to see possibilities, even if it can lead to an accumulation of ongoing projects."
+        }
+    },
+    {
+        fr: {
+            question: "Ressentez-vous parfois une empathie si intense qu'elle devient presque envahissante ?",
+            explanation: "L'hyperempathie est une caractéristique moins connue du TDAH. Cette sensibilité émotionnelle accrue peut être liée à une perception plus intense des signaux sociaux et émotionnels, créant parfois une surcharge empathique."
+        },
+        en: {
+            question: "Do you sometimes feel empathy so intense it becomes almost overwhelming?",
+            explanation: "Hyperempathy is a lesser-known characteristic of ADHD. This increased emotional sensitivity can be linked to more intense perception of social and emotional signals, sometimes creating empathic overload."
+        }
+    },
+    {
+        fr: {
+            question: "Avez-vous remarqué que votre niveau de motivation peut changer radicalement en quelques minutes ?",
+            explanation: "Les fluctuations rapides de motivation sont caractéristiques du TDAH, liées aux variations de dopamine. Une tâche peut passer d'extrêmement motivante à totalement inintéressante en peu de temps, indépendamment de son importance."
+        },
+        en: {
+            question: "Have you noticed that your motivation level can change radically within minutes?",
+            explanation: "Rapid motivation fluctuations are characteristic of ADHD, linked to dopamine variations. A task can go from extremely motivating to totally uninteresting in a short time, regardless of its importance."
+        }
+    },
+    {
+        fr: {
+            question: "Trouvez-vous plus facile de maintenir votre attention dans des environnements en mouvement ?",
+            explanation: "Certaines personnes TDAH se concentrent mieux dans des environnements dynamiques comme les cafés ou les transports. Ce paradoxe apparent s'explique par le fait que le bruit de fond peut aider à réguler le niveau de stimulation cognitive."
+        },
+        en: {
+            question: "Do you find it easier to maintain your attention in moving environments?",
+            explanation: "Some people with ADHD concentrate better in dynamic environments like cafes or transportation. This apparent paradox is explained by the fact that background noise can help regulate cognitive stimulation levels."
+        }
+    },
+    {
+        fr: {
+            question: "Avez-vous développé des rituels complexes pour gérer vos transitions entre différentes activités ?",
+            explanation: "Les transitions peuvent être particulièrement difficiles pour le cerveau TDAH. Développer des rituels de transition est une adaptation courante qui aide à gérer le changement de contexte et à maintenir un fil conducteur entre les activités."
+        },
+        en: {
+            question: "Have you developed complex rituals to manage your transitions between different activities?",
+            explanation: "Transitions can be particularly challenging for the ADHD brain. Developing transition rituals is a common adaptation that helps manage context switching and maintain a thread between activities."
+        }
+    },
+    {
+        fr: {
+            question: "Remarquez-vous que votre écriture ou votre façon de parler change significativement selon votre niveau d'engagement ?",
+            explanation: "La variabilité de l'expression, qu'elle soit écrite ou orale, est souvent liée au niveau d'engagement dans le TDAH. Cette fluctuation peut créer des contrastes marqués dans la qualité et le style de communication."
+        },
+        en: {
+            question: "Do you notice that your writing or way of speaking changes significantly depending on your level of engagement?",
+            explanation: "Variability in expression, whether written or oral, is often linked to engagement level in ADHD. This fluctuation can create marked contrasts in communication quality and style."
+        }
+    },
+    {
+        fr: {
+            question: "Avez-vous une capacité particulière à remarquer des connexions inhabituelles entre des concepts différents ?",
+            explanation: "La pensée associative divergente est une force du TDAH. Cette capacité à voir des liens non évidents peut mener à des insights créatifs uniques, même si elle peut parfois rendre la communication de ces idées plus complexe."
+        },
+        en: {
+            question: "Do you have a particular ability to notice unusual connections between different concepts?",
+            explanation: "Divergent associative thinking is a strength of ADHD. This ability to see non-obvious links can lead to unique creative insights, even if it can sometimes make communicating these ideas more complex."
+        }
+    },
+    {
+        fr: {
+            question: "Ressentez-vous parfois le besoin de bouger ou de vous agiter pour mieux réfléchir ?",
+            explanation: "Le mouvement peut stimuler les fonctions cognitives dans le TDAH. Cette 'pensée kinesthésique' où le mouvement facilite la réflexion est une adaptation naturelle qui améliore le traitement cognitif."
+        },
+        en: {
+            question: "Do you sometimes feel the need to move or fidget to think better?",
+            explanation: "Movement can stimulate cognitive functions in ADHD. This 'kinesthetic thinking' where movement facilitates reflection is a natural adaptation that improves cognitive processing."
+        }
+    },
+    {
+        fr: {
+            question: "Avez-vous remarqué que votre sens du temps s'améliore dans des situations de pression positive ?",
+            explanation: "La gestion du temps peut s'améliorer significativement sous une pression positive dans le TDAH. Ce phénomène est lié à l'augmentation de la dopamine dans des situations de défi stimulant."
+        },
+        en: {
+            question: "Have you noticed that your sense of time improves in situations of positive pressure?",
+            explanation: "Time management can improve significantly under positive pressure in ADHD. This phenomenon is linked to increased dopamine in stimulating challenge situations."
+        }
+    },
+    {
+        fr: {
+            question: "Trouvez-vous plus facile de maintenir une routine quand vous la partagez avec d'autres ?",
+            explanation: "La responsabilité partagée peut être un puissant stabilisateur pour les personnes TDAH. L'engagement social ajoute une dimension de motivation externe qui peut renforcer la maintenance des habitudes."
+        },
+        en: {
+            question: "Do you find it easier to maintain a routine when you share it with others?",
+            explanation: "Shared accountability can be a powerful stabilizer for people with ADHD. Social engagement adds an external motivation dimension that can strengthen habit maintenance."
+        }
+    },
+    {
+        fr: {
+            question: "Avez-vous développé une sensibilité particulière aux incohérences dans votre environnement ?",
+            explanation: "Le cerveau TDAH peut être particulièrement attentif aux détails qui 'ne collent pas'. Cette hypervigilance aux incohérences peut être à la fois un atout dans certaines situations et une source de distraction dans d'autres."
+        },
+        en: {
+            question: "Have you developed a particular sensitivity to inconsistencies in your environment?",
+            explanation: "The ADHD brain can be particularly attentive to details that 'don't fit'. This hypervigilance to inconsistencies can be both an asset in some situations and a source of distraction in others."
+        }
+    },
+    {
+        fr: {
+            question: "Remarquez-vous que votre capacité à vous concentrer augmente significativement en présence d'une deadline imminente ?",
+            explanation: "L'urgence peut déclencher une concentration intense chez les personnes TDAH. Ce phénomène, parfois appelé 'panic working', est lié à la libération d'adrénaline qui peut temporairement compenser les défis attentionnels."
+        },
+        en: {
+            question: "Do you notice that your ability to focus increases significantly in the presence of an imminent deadline?",
+            explanation: "Urgency can trigger intense concentration in people with ADHD. This phenomenon, sometimes called 'panic working', is linked to adrenaline release that can temporarily compensate for attentional challenges."
+        }
+    },
+    {
+        fr: {
+            question: "Avez-vous tendance à absorber involontairement les émotions et l'énergie des personnes autour de vous ?",
+            explanation: "La perméabilité émotionnelle est courante dans le TDAH. Cette sensibilité aux états émotionnels environnants peut être à la fois une force en termes d'intelligence sociale et un défi pour maintenir ses propres frontières émotionnelles."
+        },
+        en: {
+            question: "Do you tend to involuntarily absorb the emotions and energy of people around you?",
+            explanation: "Emotional permeability is common in ADHD. This sensitivity to surrounding emotional states can be both a strength in terms of social intelligence and a challenge for maintaining one's own emotional boundaries."
+        }
+    },
+    {
+        fr: {
+            question: "Trouvez-vous que votre créativité s'exprime le mieux dans des situations improvisées ?",
+            explanation: "L'improvisation peut stimuler particulièrement la créativité TDAH. La spontanéité et l'absence de contraintes préétablies permettent souvent une expression plus fluide des idées et des solutions innovantes."
+        },
+        en: {
+            question: "Do you find that your creativity expresses itself best in improvised situations?",
+            explanation: "Improvisation can particularly stimulate ADHD creativity. Spontaneity and the absence of pre-established constraints often allow for more fluid expression of ideas and innovative solutions."
+        }
     }
 ];
 
