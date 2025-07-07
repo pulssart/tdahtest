@@ -308,6 +308,16 @@ const questions = [
             question: "Do you experience emotions particularly intensely, with emotional reactions that might seem disproportionate to others?",
             explanation: "Emotional dysregulation and affective hypersensitivity are core components of ADHD. People with ADHD may experience emotions with multiplied intensity and have more difficulty regulating them. This increased sensitivity can manifest as more vivid emotional reactions, difficulty 'coming down' after strong emotions, and a deeper impact of emotional experiences on daily life."
         }
+    },
+    {
+        fr: {
+            question: "Remarquez-vous des variations importantes dans votre capacité à parler ou comprendre une langue étrangère selon votre niveau de fatigue ou de stress ?",
+            explanation: "Les personnes TDAH peuvent expérimenter des fluctuations marquées dans leurs compétences linguistiques. Cette variabilité peut se manifester par une excellente maîtrise dans certains contextes (notamment lors d'interactions spontanées ou passionnantes) contrastant avec des difficultés significatives dans d'autres situations (comme lors de fatigue ou de stress). Cette particularité est liée à la façon dont le cerveau TDAH traite et accède aux informations linguistiques, fortement influencée par le niveau d'engagement et l'état émotionnel du moment."
+        },
+        en: {
+            question: "Do you notice significant variations in your ability to speak or understand a foreign language depending on your level of fatigue or stress?",
+            explanation: "People with ADHD may experience marked fluctuations in their language skills. This variability can manifest as excellent proficiency in certain contexts (particularly during spontaneous or exciting interactions) contrasting with significant difficulties in other situations (such as during fatigue or stress). This particularity is related to how the ADHD brain processes and accesses linguistic information, heavily influenced by the current level of engagement and emotional state."
+        }
     }
 ];
 
