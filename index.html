@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD Test - Test TDAH</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="language-selector">
+        <button class="lang-btn selected" data-lang="fr">Français</button>
+        <button class="lang-btn" data-lang="en">English</button>
+    </div>
+
+    <header>
+        <h1>
+            <span class="fr">Comprendre le TDAH</span>
+            <span class="en">Understanding ADHD</span>
+        </h1>
+        <p class="subtitle">
+            <span class="fr">Testez-vous et apprenez-en plus sur le Trouble du Déficit de l'Attention avec ou sans Hyperactivité</span>
+            <span class="en">Test yourself and learn more about Attention Deficit Hyperactivity Disorder</span>
+        </p>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>
+                <span class="fr">Test d'auto-évaluation TDAH</span>
+                <span class="en">ADHD Self-Assessment Test</span>
+            </h2>
+            <p>
+                <span class="fr">Ce questionnaire vous aidera à mieux comprendre les symptômes du TDAH. À travers une série de questions, vous découvrirez différents aspects de ce trouble et recevrez des explications détaillées pour chaque réponse.</span>
+                <span class="en">This questionnaire will help you better understand ADHD symptoms. Through a series of questions, you will discover different aspects of this disorder and receive detailed explanations for each answer.</span>
+            </p>
+            <p class="note">
+                <span class="fr">En plus d'évaluer les symptômes classiques, ce test aborde également les aspects moins connus du TDAH comme les stratégies d'adaptation, l'impact émotionnel et les forces potentielles liées à ce fonctionnement neurologique différent.</span>
+                <span class="en">In addition to assessing classic symptoms, this test also addresses lesser-known aspects of ADHD such as coping strategies, emotional impact, and potential strengths related to this different neurological functioning.</span>
+            </p>
+            <button id="startTest" class="btn-primary">
+                <span class="fr">Commencer le test</span>
+                <span class="en">Start the test</span>
+            </button>
+        </section>
+
+        <section id="quiz" class="hidden">
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <div id="question-container">
+                <!-- Les questions seront injectées ici via JavaScript -->
+            </div>
+            <div id="explanation" class="hidden">
+                <!-- Les explications seront injectées ici via JavaScript -->
+            </div>
+            <div class="navigation-buttons">
+                <button id="prevQuestion" class="btn-secondary hidden">
+                    <span class="fr">Question précédente</span>
+                    <span class="en">Previous question</span>
+                </button>
+                <button id="nextQuestion" class="btn-primary">
+                    <span class="fr">Question suivante</span>
+                    <span class="en">Next question</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="results" class="hidden">
+            <h2>
+                <span class="fr">Vos résultats</span>
+                <span class="en">Your results</span>
+            </h2>
+            <div id="score-container">
+                <div id="score-circle">
+                    <span id="final-score">0</span>/100
+                </div>
+            </div>
+            <div id="score-explanation">
+                <!-- L'explication du score sera injectée ici via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <span class="fr">Note importante : Ce test n'est pas un outil de diagnostic médical. Consultez un professionnel de santé pour un diagnostic officiel.</span>
+            <span class="en">Important note: This test is not a medical diagnostic tool. Consult a healthcare professional for an official diagnosis.</span>
+        </p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
