@@ -288,6 +288,16 @@ const questions = [
             question: "Do you find that your creativity expresses itself best in improvised situations?",
             explanation: "Improvisation can particularly stimulate ADHD creativity. Spontaneity and the absence of pre-established constraints often allow for more fluid expression of ideas and innovative solutions."
         }
+    },
+    {
+        fr: {
+            question: "Ressentez-vous une hypersensibilité aux textures, aux sons ou aux sensations physiques qui affecte votre quotidien ?",
+            explanation: "L'hypersensibilité sensorielle est une caractéristique fréquente du TDAH. Le cerveau TDAH peut traiter les informations sensorielles de manière plus intense, rendant certaines textures, sons, ou sensations physiques particulièrement envahissants ou inconfortables. Cette sensibilité accrue peut influencer les choix quotidiens, des vêtements portés aux environnements fréquentés."
+        },
+        en: {
+            question: "Do you experience hypersensitivity to textures, sounds, or physical sensations that affects your daily life?",
+            explanation: "Sensory hypersensitivity is a common characteristic of ADHD. The ADHD brain may process sensory information more intensely, making certain textures, sounds, or physical sensations particularly overwhelming or uncomfortable. This increased sensitivity can influence daily choices, from clothing worn to environments frequented."
+        }
     }
 ];
 
