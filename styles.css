@@ -1,11 +1,12 @@
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #4f46e5;
-    --background-color: #f8fafc;
-    --text-color: #1e293b;
-    --light-gray: #e2e8f0;
-    --white: #ffffff;
-    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    /* Couleurs adaptées pour un thème sombre avec un fort contraste */
+    --primary-color: #7c3aed;
+    --secondary-color: #3b82f6;
+    --background-color: #0f172a;
+    --text-color: #f1f5f9;
+    --light-gray: #334155;
+    --white: #1e293b;
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
     --transition: all 0.3s ease;
 }
 
@@ -20,9 +21,10 @@ body {
     line-height: 1.8;
     color: var(--text-color);
     background-color: var(--background-color);
-    background-image: 
-        radial-gradient(circle at 100% 100%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 0% 0%, rgba(79, 70, 229, 0.1) 0%, transparent 50%);
+    color-scheme: dark;
+    background-image:
+        radial-gradient(circle at 100% 100%, rgba(124, 58, 237, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 0% 0%, rgba(59, 130, 246, 0.15) 0%, transparent 50%);
     background-attachment: fixed;
     min-height: 100vh;
 }
@@ -97,12 +99,12 @@ section:hover {
 .btn-primary {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--white);
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
 }
 
 .btn-secondary {
@@ -179,12 +181,12 @@ section:hover {
 
 .option:hover {
     border-color: var(--primary-color);
-    background-color: rgba(99, 102, 241, 0.05);
+    background-color: rgba(124, 58, 237, 0.2);
 }
 
 .option.selected {
     border-color: var(--primary-color);
-    background-color: rgba(99, 102, 241, 0.1);
+    background-color: rgba(124, 58, 237, 0.3);
     transform: scale(1.02);
 }
 
@@ -201,7 +203,7 @@ section:hover {
 #explanation {
     margin-top: 2rem;
     padding: 2rem;
-    background-color: rgba(99, 102, 241, 0.05);
+    background-color: rgba(124, 58, 237, 0.15);
     border-radius: 1rem;
     border-left: 4px solid var(--primary-color);
     animation: fadeIn 0.5s ease;
@@ -230,7 +232,7 @@ section:hover {
     justify-content: center;
     align-items: center;
     font-size: 1.4rem;
-    box-shadow: 0 8px 16px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
     animation: scaleIn 0.8s ease;
 }
 
@@ -250,7 +252,7 @@ section:hover {
 .additional-info {
     margin-top: 2rem;
     padding: 2rem;
-    background-color: rgba(99, 102, 241, 0.05);
+    background-color: rgba(59, 130, 246, 0.1);
     border-radius: 1rem;
 }
 
@@ -290,7 +292,7 @@ footer {
 }
 
 .note {
-    background: rgba(99, 102, 241, 0.05);
+    background: rgba(59, 130, 246, 0.1);
     padding: 1.5rem;
     border-radius: 1rem;
     margin: 1.5rem 0;
@@ -439,7 +441,7 @@ footer {
 }
 
 .lang-btn:hover {
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(59, 130, 246, 0.2);
 }
 
 .lang-btn.selected {
