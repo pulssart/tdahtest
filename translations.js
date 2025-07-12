@@ -4,8 +4,11 @@ const translations = {
             "Jamais ou rarement",
             "Parfois",
             "Souvent",
-            "Très souvent"
+            "Très souvent",
+            "Je ne sais pas"
         ],
+        progress_of: "questions répondues",
+        dont_know: "Je ne sais pas",
         understand_symptom: "Comprendre ce symptôme :",
         next: "Question suivante",
         previous: "Question précédente",
@@ -24,8 +27,11 @@ const translations = {
             "Never or rarely",
             "Sometimes",
             "Often",
-            "Very often"
+            "Very often",
+            "Don't know"
         ],
+        progress_of: "questions answered",
+        dont_know: "Don't know",
         understand_symptom: "Understanding this symptom:",
         next: "Next question",
         previous: "Previous question",
