@@ -12,22 +12,29 @@ function displayQuestion(index) {
     const lang = getCurrentLang();
     const questionContainer = document.getElementById('question-container');
     const question = questions[index][lang];
-    
+
     questionContainer.innerHTML = `
         <h3>${question.question}</h3>
         <div class="options">
-            ${translations[lang].options.map((option, i) => `
+            ${translations[lang].options.map((option, i) => {
+                const value = option === translations[lang].dont_know ? 'dk' : i;
+                const checked = answers[index] === value ? 'checked' : '';
+                return `
                 <label class="option">
-                    <input type="radio" name="answer" value="${i}" ${answers[index] === i ? 'checked' : ''}>
+                    <input type="radio" name="answer" value="${value}" ${checked}>
                     <span class="option-text">${option}</span>
-                </label>
-            `).join('')}
+                </label>`;
+            }).join('')}
         </div>
     `;
 
     // Mise à jour de la barre de progression
     const progress = ((index + 1) / questions.length) * 100;
     document.getElementById('progress').style.width = `${progress}%`;
+
+    // Texte du nombre de questions répondues
+    const answeredCount = answers.filter(a => typeof a === 'number').length;
+    document.getElementById('progress-text').textContent = `${answeredCount} / ${questions.length} ${translations[lang].progress_of}`;
 
     // Mise à jour des boutons de navigation
     const prevButton = document.getElementById('prevQuestion');
@@ -86,9 +93,10 @@ function showResults() {
 
 // Fonction pour calculer le score
 function calculateScore() {
-    const totalQuestions = questions.length;
-    const totalPoints = answers.reduce((sum, answer) => sum + (answer || 0), 0);
-    return Math.round((totalPoints / (totalQuestions * 3)) * 100);
+    const answered = answers.filter(a => typeof a === 'number');
+    if (answered.length === 0) return 0;
+    const totalPoints = answered.reduce((sum, a) => sum + a, 0);
+    return Math.round((totalPoints / (answered.length * 3)) * 100);
 }
 
 // Fonction pour obtenir la plage de score
@@ -110,14 +118,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     nextButton.addEventListener('click', () => {
         const selectedAnswer = document.querySelector('input[name="answer"]:checked');
-        
+
         if (!selectedAnswer && currentQuestionIndex < questions.length) {
             alert(translations[getCurrentLang()].answer_all);
             return;
         }
-        
+
         if (selectedAnswer) {
-            answers[currentQuestionIndex] = parseInt(selectedAnswer.value);
+            answers[currentQuestionIndex] = selectedAnswer.value === 'dk' ? 'dk' : parseInt(selectedAnswer.value);
         }
         
         if (currentQuestionIndex === questions.length - 1) {
@@ -138,8 +146,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Écouteur pour les réponses
     document.getElementById('question-container').addEventListener('change', (e) => {
         if (e.target.name === 'answer') {
-            answers[currentQuestionIndex] = parseInt(e.target.value);
+            answers[currentQuestionIndex] = e.target.value === 'dk' ? 'dk' : parseInt(e.target.value);
             showExplanation(currentQuestionIndex);
+            const lang = getCurrentLang();
+            const answeredCount = answers.filter(a => typeof a === 'number').length;
+            document.getElementById('progress-text').textContent = `${answeredCount} / ${questions.length} ${translations[lang].progress_of}`;
         }
     });
 }); 

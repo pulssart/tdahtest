@@ -136,6 +136,12 @@ section:hover {
     transition: width 0.5s ease;
 }
 
+#progress-text {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
 .navigation-buttons {
     display: flex;
     justify-content: space-between;
